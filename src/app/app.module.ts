@@ -10,12 +10,13 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { ShoppingListProvider } from '../providers/shopping-list/shopping-list';
 import { GraphQLModule } from '../apollo.config';
 import { HttpClientModule} from '@angular/common/http';
-
+import { NewItemPage} from '../pages/new-item/new-item';
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    TabsPage
+    TabsPage,
+    NewItemPage
   ],
   imports: [
     BrowserModule,
@@ -27,7 +28,8 @@ import { HttpClientModule} from '@angular/common/http';
   entryComponents: [
     MyApp,
     HomePage,
-    TabsPage
+    TabsPage,
+    NewItemPage
   ],
   providers: [
     StatusBar,
